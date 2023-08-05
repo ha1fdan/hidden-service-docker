@@ -28,7 +28,7 @@ git clone https://github.com/HalfdanDK/hidden-service-docker.git
 
 If you have your own vanity address files that you want to use for your Tor hidden service, follow these steps:
 
-1. Generate or obtain your custom vanity address files, including the `hs_ed25519_public_key` and private key files. You can use tools like [mkp224o](https://github.com/cathugger/mkp224o) to generate vanity addresses.
+1. Generate or obtain your custom vanity address files, including the `hs_ed25519_public_key`, `hs_ed25519_secret_key` and `hostname`. You can use tools like [mkp224o](https://github.com/cathugger/mkp224o) to generate vanity addresses.
 
 2. Replace the existing files in the `hidden_service` directory with your custom vanity address files. Make sure the `hostname` file contains your desired vanity address.
 
