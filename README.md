@@ -60,3 +60,6 @@ This project is for educational and demonstrative purposes. When deploying hidde
 ## Contributions
 
 Contributions and improvements are welcome! Feel free to open issues or pull requests if you have suggestions or enhancements.
+
+## Video Guide
+http://www.youtube.com/watch?v=SuDlJTV11n8
