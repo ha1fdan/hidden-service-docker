@@ -1,0 +1,20 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./html:/usr/share/nginx/html
+    depends_on:
+      - tor
+    networks:
+      - tor_network
+  tor:
+    image: alpine:latest
+    command: sh -c "apk update && apk add tor && chmod 700 /var/lib/tor/hidden_service && (cat /var/lib/tor/hidden_service/hostname || echo 'Hostname not available. Please restart.') && tor -f /etc/tor/torrc"
+    volumes:
+      - ./tor-config:/etc/tor
+      - ./hidden_service:/var/lib/tor/hidden_service
+    networks:
+      - tor_network
+networks:
+  tor_network:
