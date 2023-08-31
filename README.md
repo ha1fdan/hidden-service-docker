@@ -38,7 +38,7 @@ If you have your own vanity address files that you want to use for your Tor hidd
 1. Navigate to the cloned repository's directory:
 
 ```bash
-cd tor-hidden-service-docker
+cd hidden-service-docker
 ```
 
 2. Run the following command to start the containers and launch your hidden service:
