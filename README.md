@@ -8,6 +8,7 @@ These instructions will help you clone and set up the project on your local mach
 
 ### Prerequisites
 
+- Git
 - Docker
 - Docker Compose
 
@@ -16,7 +17,7 @@ These instructions will help you clone and set up the project on your local mach
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/HalfdanDK/hidden-service-docker.git
+git clone https://github.com/ha1fdan/hidden-service-docker.git
 ```
 
 ### Configuration
@@ -61,5 +62,5 @@ This project is for educational and demonstrative purposes. When deploying hidde
 
 Contributions and improvements are welcome! Feel free to open issues or pull requests if you have suggestions or enhancements.
 
-## Video Guide
+## Video Showcase
 http://www.youtube.com/watch?v=SuDlJTV11n8
