@@ -13,7 +13,7 @@ services:
     image: alpine:latest
     command: sh -c "apk update && apk add tor && chmod 700 /var/lib/tor/hidden_service && (cat /var/lib/tor/hidden_service/hostname || echo 'Hostname not available.') && tor -f /etc/tor/torrc"
     volumes:
-      - ./tor-config:/etc/tor:ro
+      - ./tor-config:/etc/tor:rw
       - ./hidden_service:/var/lib/tor/hidden_service:rw
     networks:
       - tor_network
