@@ -17,13 +17,13 @@ These instructions will help you clone and set up the project on your local mach
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/ha1fdan/hidden-service-docker.git
+git clone https://github.com/ha1fdan/hidden-service-docker.git 
+cd hidden-service-docker
 ```
 
 ### Configuration
 
-1. Modify the `tor-config/torrc` file to customize your hidden service settings.
-2. Prepare your HTML content and place it in the `html` directory.
+Prepare your HTML content and place it in the `html` directory.
 
 #### Upload Custom Vanity Address (Optional)
 
@@ -36,19 +36,13 @@ If you have your own vanity address files that you want to use for your Tor hidd
 
 ### Launch the Hidden Service
 
-1. Navigate to the cloned repository's directory:
-
-```bash
-cd hidden-service-docker
-```
-
-2. Run the following command to start the containers and launch your hidden service:
+1. Run the following command to start the containers and launch your hidden service:
 
 ```bash
 docker compose up -d
 ```
 
-3. Access your hidden service through the generated .onion address. You can find the address in the Tor logs by running:
+2. Access your hidden service through the generated .onion address. You can find the address in the Tor logs by running:
 
 ```bash
 docker compose logs tor
