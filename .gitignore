@@ -1,2 +1,3 @@
 logs/
-data/*
+data/hostname
+data/hs_ed25519_*
