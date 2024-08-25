@@ -1,0 +1,24 @@
+services:
+  nginx:
+    container_name: nginx
+    image: nginx
+    volumes:
+      - ./html:/usr/share/nginx/html
+      - ./logs:/var/log/nginx
+    networks:
+      - tor_network
+  tor:
+    container_name: tor
+    build: .
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+    stop_grace_period: 1m
+    networks:
+      - tor_network
+
+networks:
+  tor_network:

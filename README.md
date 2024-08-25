@@ -31,7 +31,7 @@ If you have your own vanity address files that you want to use for your Tor hidd
 
 1. Generate or obtain your custom vanity address files, including the `hs_ed25519_public_key`, `hs_ed25519_secret_key` and `hostname`. You can use tools like [mkp224o](https://github.com/cathugger/mkp224o) to generate vanity addresses.
 
-2. Replace the existing files in the `hidden_service` directory with your custom vanity address files. Make sure the `hostname` file contains your desired vanity address.
+2. Place your vanity address files in the `data` directory. Make sure the `hostname` file contains your desired vanity address.
 
 
 ### Launch the Hidden Service
@@ -45,13 +45,13 @@ cd hidden-service-docker
 2. Run the following command to start the containers and launch your hidden service:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 3. Access your hidden service through the generated .onion address. You can find the address in the Tor logs by running:
 
 ```bash
-docker-compose logs tor
+docker compose logs tor
 ```
 
 ## Note
@@ -62,5 +62,5 @@ This project is for educational and demonstrative purposes. When deploying hidde
 
 Contributions and improvements are welcome! Feel free to open issues or pull requests if you have suggestions or enhancements.
 
-## Video Showcase
+## Video Showcase 
 http://www.youtube.com/watch?v=SuDlJTV11n8
