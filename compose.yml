@@ -17,6 +17,8 @@ services:
     cap_add:
       - NET_BIND_SERVICE
     stop_grace_period: 1m
+    volumes:
+      - ./data:/var/lib/tor/hidden_service
     networks:
       - tor_network
 
