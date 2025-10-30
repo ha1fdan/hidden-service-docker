@@ -1,0 +1,7 @@
+.git
+.gitignore
+logs
+README.md
+LICENSE
+compose.yml
+data
